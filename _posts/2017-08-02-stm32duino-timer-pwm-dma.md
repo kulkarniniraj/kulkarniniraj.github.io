@@ -36,7 +36,7 @@ Although this much information can be deduced from examples found on various blo
 
 ## PWM
 Pulse Width Modulation, generally used for dimming effects or generating analog signal, works using hardware timers. 
-* Timer Counter counts number of pulses elapsed
+* Timer Counter counts number of *clock pulses* elapsed
 * Timer CCR (compare) register sets number of pulses after which output inverts (usually high
 to low)
 * Timer ARR (reload) sets total width of pulse.
