@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Stm32duino using DMA for PWM or Timer"
 categories: stm32 stm32duino dma pwm timer
 ---
