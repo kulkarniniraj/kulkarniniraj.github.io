@@ -66,10 +66,10 @@ So, my timer set up function had calls to
 After that I enabled DMA and started timer and *voilà!!* DMA was working. I enabled completion interrupt just to check whether it was working or not.
 
 ## References:
-STM32F103 reference manual
-timer.h from stm32duino->system/libmaple/include/libmaple
-dma.h from aforementioned folder
-http://polpla.cat/tutorials/SPI+DMA.html
++STM32F103 reference manual
++timer.h from stm32duino->system/libmaple/include/libmaple
++dma.h from aforementioned folder
++http://polpla.cat/tutorials/SPI+DMA.html
 
 
 
