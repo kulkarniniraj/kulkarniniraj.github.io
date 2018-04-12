@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 Paint</title>
+		
+		<link rel="stylesheet" href="html5reset-1.6.1.css">
+		<style>/*tools*/
+			#tools{
+				float:left;
+				width:80px;
+				padding:15px;
+			}
+		</style>
+		<style>/*color palette*/
+			#colorPalette div{
+				width:50px;
+				height:50px;
+				margin-bottom:4px;
+			}
+			#red{
+				background-color:red;
+			}
+			#green{
+				background-color:green;
+			}
+			#blue{
+				background-color:blue;
+			}
+		</style>
+		<style>/*body*/
+		body{
+			background-color:#ccc;
+			overflow:hidden;
+		}
+		</style>
+		<style>/*paint area*/
+		#paintArea{
+			width:200px;
+			height:200px;
+			background-color:#fff;
+			float:left;
+			position:relative;
+		}
+		#paintArea canvas{
+			position:absolute;
+			top:0px;
+			left:0px;
+			cursor:crosshair;
+		}
+		</style>
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.8.0"> </script>
+		<!--<script type="text/javascript" src="canvasPaint.js"></script>-->
+		<script type="text/javascript">
+			var selectedColor = "red";
+			
+			$(document).ready(function(){
+				$("#colorPalette div").click(function(){
+					selectedColor = this.id;
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<hgroup>
+				<h1>Devnagari digit recognizer</h1>
+			</hgroup>
+		</header>
+		<section id="tools">
+			<!--<section id="colorPalette">
+				<div id="red"></div>
+				<div id="green"></div>
+				<div id="blue"></div>
+			</section>-->
+			<section id="toolBox">
+				<!--<input type="checkbox" id="kare"><label for="kare">Kare</label>-->
+				<input type="button" value="clear" onclick="kaydet()">
+			</section>
+		</section>
+		<section id="paintArea">
+			<canvas id="paintCanvas" width="200" height="200"></canvas>
+			<canvas id="hintCanvas" width="200" height="200"></canvas>
+		</section>
+		<div style="width:40px;float:left;">&nbsp</div>
+		<div id="chartContainer" style="width:500px; height:300px;"></div>
+		<canvas id="paint2" width="200" height="200" style="border:2px solid;"></canvas>
+	</body>
+	
+	<script type="text/javascript" src="paint.js"> </script>
+</html>
