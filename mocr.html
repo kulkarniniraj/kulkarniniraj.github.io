@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML5 Paint</title>
+		
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.8.0"> </script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<script type="text/javascript">
+			var selectedColor = "red";
+		</script>
+	</head>
+	
+	<body>
+    <div class="w3-container w3-green  w3-center">
+      <h3>Devnagari digit recognizer</h3>
+    </div>
+    <div>&nbsp;</div>
+    <div class="w3-row">
+      <button class="w3-button w3-aqua w3-col l4 s4" onclick="kaydet()">Clear</button>
+      <div class="w3-col l8 s8 w3-row">
+        <div class="w3-col s1">&nbsp;</div>
+        <h3 class="w3-col s7">Prediction: </h3>
+        <h3 class="w3-col s4" id="pred"></h3>
+      </div>
+    </div>
+		<div id="paintArea" class="container border border-primary">
+			<canvas id="paintCanvas" class="w3-border" width="300" height="300"></canvas>
+    </div>
+		<div style="width:40px;float:left;">&nbsp</div>
+		<div id="chartContainer" style="width:300px; height:300px;"></div>
+		<canvas id="paint2" width="200" height="200" style="border:2px solid;"></canvas>
+	</body>
+	
+	<script type="text/javascript" src="mpaint.js"> </script>
+</html>
