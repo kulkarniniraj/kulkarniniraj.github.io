@@ -1,4 +1,6 @@
 theme: jekyll-theme-cayman
+title: Blog for my codes
+google_analytics: UA-124576841-1
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
