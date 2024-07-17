@@ -4,11 +4,23 @@ layout: default
 ---
       {% seo %}
     <h2>Posts</h2>
-    <ul>
+    <!-- <ul> -->
       {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          {{ post.excerpt }}
-        </li>
+        <div style="box-shadow: 0 4px 12px rgba(29, 1, 0, 0.3);
+        padding-left:  15px;
+        padding-top:  15px;
+        padding-bottom:  15px;
+        margin-bottom: 20px;
+        background-color: #ede8e8;
+    border-radius: 5px;">
+          
+          <a href="{{ post.url }}"><h2> {{ post.title }}</h2></a>
+            <div> {{ post.excerpt }} </div>
+            <span>
+              <time style="color: blue;">{{ post.date | date: "%b %-d, %Y" }}</time> 
+              
+            </span>
+          
+          </div>
       {% endfor %}
-    </ul>
+    <!-- </ul> -->

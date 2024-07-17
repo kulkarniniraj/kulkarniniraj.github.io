@@ -2,6 +2,8 @@
 layout: default
 title: "Stm32duino using DMA for PWM or Timer"
 categories: stm32 stm32duino dma pwm timer
+date: 2017-02-08
+excerpt: "PWM using DMA API: Stm32duino (Roger Clarke's) "
 ---
 
 # Using DMA for timer or PWM in stm32duino or leaflab maple
