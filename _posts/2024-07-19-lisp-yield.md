@@ -134,4 +134,4 @@ to this line:
 which is just quoting the list and unquoting the element inside. This unquoting already gives a taste of how a macro will evolve from this code.
 
 
-**Continued in Part 2** 
+[Continued in Part 2](/2024/07/24/lisp-yield-2.html)
