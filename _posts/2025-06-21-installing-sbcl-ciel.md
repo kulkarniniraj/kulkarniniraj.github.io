@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Installing SBCL and CIEL"
 date: 2025-06-21
 categories: [common-lisp, ciel]
